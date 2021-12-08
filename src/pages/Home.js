@@ -1,10 +1,17 @@
 import React from "react";
-import south from "../assets/south.jpg";
+import BannerImage from "../assets/food.jpeg";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <div className="home" style={{ backgroundImage: `url(${south})` }}>
-      <div className="headerContainer"></div>
+    <div className="home" style={{ backgroundImage: `url(${BannerImage})` }}>
+      <div className="headerContainer">
+        <h1 style={{ fontWeight: "bold" }}>Food Corner</h1>
+        <p>INDIAN FOOD AT CLICK</p>
+        <Link>
+          <button>Order Now</button>
+        </Link>
+      </div>
     </div>
   );
 }

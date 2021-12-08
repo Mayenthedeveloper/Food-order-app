@@ -12,8 +12,10 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Routes>
           <Route path="/" exact component={Home} />
+          {/* <Route exact path="/" element={<Home />} /> */}
         </Routes>
       </Router>
     </div>
