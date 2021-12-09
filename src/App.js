@@ -7,6 +7,7 @@ import {
   Switch,
 } from "react-router-dom";
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" exact component={Home} />
           {/* <Route exact path="/" element={<Home />} /> */}
+          <Route path="/contact" exact component={Contact} />
         </Routes>
       </Router>
     </div>
