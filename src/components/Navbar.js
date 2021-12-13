@@ -5,18 +5,22 @@ import "../styles/Navbar.css";
 import ReorderIcon from "@mui/icons-material/Reorder";
 
 function Navbar() {
-  const [showLinks, setShowLinks] = useState(false);
-  function Clicks() {
-    setShowLinks(!showLinks);
-  }
+  const [openLinks, setopenLinks] = useState(false);
+  // function Clicks() {
+  //   setShowLinks(!showLinks);
+  // }
+
+  const toggleNavBar = () => {
+    setopenLinks(!openLinks);
+  };
   return (
     <div className="navbar">
-      <div className="leftSide" id={showLinks ? "open" : "close"}>
+      <div className="leftSide" id={openLinks ? "open" : "close"}>
         <img src={logo} alt="" />
         <div className="hiddenLinks">
           <Link to="/">Home</Link>
-          <Link to="/">Menu</Link>
-          <Link to="/">About</Link>
+          <Link to="/menu">Menu</Link>
+          <Link to="/About">About</Link>
           <Link to="/contact">Contact</Link>
         </div>
       </div>
@@ -25,7 +29,7 @@ function Navbar() {
         <Link to="/menu">Menu</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
-        <button onClick={Clicks}>
+        <button onClick={toggleNavBar}>
           <ReorderIcon />
         </button>
       </div>

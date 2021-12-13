@@ -13,8 +13,8 @@ function Footer() {
         <TwitterIcon />
         <FacebookIcon />
         <LinkedInIcon />
-        <p>&copy; 2021 IndianFood.com</p>
       </div>
+      <p>&copy; 2021 IndianFood.com</p>
     </div>
   );
 }
