@@ -9,7 +9,7 @@ function Home() {
       <div className="headerContainer">
         <h1 style={{ fontWeight: "bold" }}>Food Corner</h1>
         <p>INDIAN FOOD AT CLICK</p>
-        <Link>
+        <Link to="/menu">
           <button>Order Now</button>
         </Link>
       </div>
